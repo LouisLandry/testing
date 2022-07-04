@@ -2,7 +2,7 @@ environment: AWS
 instance_type: m5.4xlarge
 instance_count: 3
 vpc_id: vpc-1ebf5b78
-subnet_id: subnet-0a87e44b886729fb5
+subnet_id: subnet-ec236ba5
 region: us-west-2
 availability_zones:
     - us-west-2a
