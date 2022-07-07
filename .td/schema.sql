@@ -1,8 +1,3 @@
-
--- dpi object definition
--- dpi object definition
--- dpi object definition
--- dpi object definition
 -- dpi object definition
 CREATE FOREIGN TABLE dpi, EXTERNAL SECURITY DEFINER TRUSTED tio (
  	location varchar(2048) character set unicode casespecific,
@@ -25,14 +20,8 @@ CREATE FOREIGN TABLE dpi, EXTERNAL SECURITY DEFINER TRUSTED tio (
  ) USING (
  	LOCATION('/S3/s3.us-west-1.amazonaws.com/tio-antares-nos-uswest1/dpi/')
  	STOREDAS('PARQUET')
-	ACCESS_ID('AKIA5AAIAVO7T7RHAMDZ')
-	ACCESS_KEY('****************************************')
  );
 
--- READ_PATH_PARQUET object definition
--- READ_PATH_PARQUET object definition
--- READ_PATH_PARQUET object definition
--- READ_PATH_PARQUET object definition
 -- READ_PATH_PARQUET object definition
 CREATE FUNCTION MAPPING READ_PATH_PARQUET
 FOR READ_NOS EXTERNAL SECURITY DEFINER TRUSTED tio
@@ -43,10 +32,6 @@ STOREDAS('PARQUET'),
 FULLSCAN('TRUE'),
 ANY IN TABLE;
 
--- READ_PATH_CSV object definition
--- READ_PATH_CSV object definition
--- READ_PATH_CSV object definition
--- READ_PATH_CSV object definition
 -- READ_PATH_CSV object definition
 CREATE FUNCTION MAPPING READ_PATH_CSV
 FOR READ_NOS EXTERNAL SECURITY DEFINER TRUSTED tio
