@@ -1,5 +1,5 @@
 environment: AWS
-instance_type: r5d.4xlarge
+instance_size: Small
 instance_count: 1
 vpc_id: vpc-1ebf5b78
 subnet_id: subnet-ec236ba5
